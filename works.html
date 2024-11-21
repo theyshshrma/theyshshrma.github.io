@@ -20,15 +20,58 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon_io/favicon.ico">
     <script src="https://cdn.tiny.cloud/1/w3r0r9zl5y3j624ieuxvyfe8hfvittfeqv5o8o08mjzh4ize/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <style>
+        .hover-card {
+          position: relative;
+          overflow: hidden;
+          cursor: pointer;
+          border-radius: 1rem;
+        }
+        
+        .hover-card img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+    
+        .hover-card .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.6);
+          color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+        }
+    
+        .hover-card:hover .overlay {
+          opacity: 1;
+        }
+    
+        .overlay a {
+          background: #fff;
+          color: #000;
+          padding: 10px 20px;
+          text-decoration: none;
+          border-radius: 5px;
+          font-weight: bold;
+        }
+    
+        .overlay a:hover {
+          background: black;
+          color: #fff;
+        }
+      </style>
 </head>
 <body>
 
     <main class="main-workdetails-page">
-
-
-
-
-
+  
 <!-- Header -->
 <header class="header-area">
     <div class="container">
@@ -57,140 +100,61 @@
         </div>
     </div>
 </header>
-<!-- Projects -->
+
 <section class="projects-area">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="section-heading" data-aos="fade-up">
+                <h1 class="section-heading" data-aos="fade-up" style="font-size: 3rem;">
                     <img src="./images/star-2.png" alt="Star">
                                             All Projects 
                                         <img src="./images/star-2.png" alt="Star"></h1>
             </div>
         
+<!-- Projects -->
+<div class="container py-5">
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="hover-card">
+          <img src="./images/League11_Header.png" alt="Card Image">
+          <div class="overlay">
+            <a href="#">View Case Study</a>
+          </div>
         </div>
-        <div class="row">
-                        <div class="col-md-4 d-flex align-items-start gap-24">
-                <div data-aos="zoom-in" class="flex-1">
-                    <div class="project-item shadow-box">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <div class="project-info">
-                                <h1>League11</h1>
-                            </div>
-                        </div>
-                        <br>
-                        <img src="./images/bg1.png" alt="BG" class="bg-img">
-                        <div class="project-img d-flex justify-content-center">
-                            <img src="./images/BannerData.jpg" alt="Project"
-                                style="max-height: 300px;height: 100%;  max-width: 300px; width: 100%;">
-                        </div>
-                        <div class="d-flex align-items-center justify-content-around">
-                                                        <a class="btn btn-secondary" href="https://92238.zappar.io/2581419448629167106/1.0.2/" target="_blank" role="button">View Case Study</a>                        </div>
-                        </div>
-                </div>
-            </div>
-                        <div class="col-md-4 d-flex align-items-start gap-24">
-                <div data-aos="zoom-in" class="flex-1">
-                    <div class="project-item shadow-box">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <div class="project-info">
-                                <h1>Justice Poker</h1>
-                            </div>
-                        </div>
-                        <br>
-                        <img src="./images/bg1.png" alt="BG" class="bg-img">
-                        <div class="project-img d-flex justify-content-center">
-                            <img src="./DB/33/BannerData.jpg" alt="Project"
-                                style="max-height: 300px;height: 100%;  max-width: 300px; width: 100%;">
-                        </div>
-                        <div class="d-flex align-items-center justify-content-around">
-                                                        <a class="btn btn-secondary" href="https://92238.zappar.io/5459075826422443309/1.0.3/" target="_blank" role="button">View Case Study</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-md-4 d-flex align-items-start gap-24">
-                <div data-aos="zoom-in" class="flex-1">
-                    <div class="project-item shadow-box">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <div class="project-info">
-                                <h1>ScoresNow</h1>
-                            </div>
-                        </div>
-                        <br>
-                        <img src="./images/bg1.png" alt="BG" class="bg-img">
-                        <div class="project-img d-flex justify-content-center">
-                            <img src="./DB/32/BannerData.jpg" alt="Project"
-                                style="max-height: 300px;height: 100%;  max-width: 300px; width: 100%;">
-                        </div>
-                        <div class="d-flex align-items-center justify-content-around">
-                                                        <a class="btn btn-secondary" href="/" target="_blank" role="button">View Case Study</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-md-4 d-flex align-items-start gap-24">
-                <div data-aos="zoom-in" class="flex-1">
-                    <div class="project-item shadow-box">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <div class="project-info">
-                                <h1>Hooter</h1>
-                            </div>
-                        </div>
-                        <br>
-                        <img src="./images/bg1.png" alt="BG" class="bg-img">
-                        <div class="project-img d-flex justify-content-center">
-                            <img src="./DB/31/BannerData.jpg" alt="Project"
-                                style="max-height: 300px;height: 100%;  max-width: 300px; width: 100%;">
-                        </div>
-                        <div class="d-flex align-items-center justify-content-around">
-                                                        <a class="btn btn-secondary" href="/" target="_blank" role="button">View Case Study</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-md-4 d-flex align-items-start gap-24">
-                <div data-aos="zoom-in" class="flex-1">
-                    <div class="project-item shadow-box">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <div class="project-info">
-                                <h1>Car Rally</h1>
-                            </div>
-                        </div>
-                        <br>
-                        <img src="./images/bg1.png" alt="BG" class="bg-img">
-                        <div class="project-img d-flex justify-content-center">
-                            <img src="./DB/30/BannerData.jpg" alt="Project"
-                                style="max-height: 300px;height: 100%;  max-width: 300px; width: 100%;">
-                        </div>
-                        <div class="d-flex align-items-center justify-content-around">
-                                                        <a class="btn btn-secondary" href="/" target="_blank" role="button">View Case Study</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-md-4 d-flex align-items-start gap-24">
-                <div data-aos="zoom-in" class="flex-1">
-                    <div class="project-item shadow-box">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <div class="project-info">
-                                <h1>Ludo Rally</h1>
-                            </div>
-                        </div>
-                        <br>
-                        <img src="./images/bg1.png" alt="BG" class="bg-img">
-                        <div class="project-img d-flex justify-content-center">
-                            <img src="./DB/2/BannerData.jpg" alt="Project"
-                                style="max-height: 300px;height: 100%;  max-width: 300px; width: 100%;">
-                        </div>
-                        <div class="d-flex align-items-center justify-content-around">
-                                                        <a class="btn btn-secondary" href="/" target="_blank" role="button">View Case Study</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                    </div>
-    </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="hover-card">
+          <img src="./images/Justice_Poker_Header.png" alt="Card Image">
+          <div class="overlay">
+            <a href="#">View Case Study</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="hover-card">
+          <img src="./images/justicepoker.png" alt="Card Image">
+          <div class="overlay">
+            <a href="#">View Case Study</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-4">
+        <div class="hover-card">
+          <img src="./images/justicepoker.png" alt="Card Image">
+          <div class="overlay">
+            <a href="#">View Case Study</a>
+          </div>
+        </div>
+      </div>
+
+
 </section><!-- Footer -->
 <footer class="footer-area">
     <div class="footer-content text-center">
@@ -245,6 +209,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"
     integrity="sha384-gdQErvCNWvHQZj6XZM0dNsAoY4v+j5P1XDpNkcM3HJG1Yx04ecqIHk7+4VBOCHOG" crossorigin="anonymous">
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
     var useDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
